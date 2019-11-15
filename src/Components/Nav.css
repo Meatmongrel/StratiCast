@@ -16,12 +16,20 @@ ul {
 .login-elements {
     display: flex;
     flex-flow: row nowrap;
-    justify-items: space-between;
+    justify-content: space-around;
+}
+
+.secondary-nav{
+    margin: 0 1vw;
 }
 
 .nav-element {
     border: 1px solid black;
     padding: 2vh 5vw;
+}
+
+.nav-element:focus, .nav-element:active, .nav-element:enabled{
+    outline: none;
 }
 
 li{

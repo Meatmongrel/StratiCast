@@ -23,11 +23,12 @@ export default function Navbar(props) {
                     <Link to="/"><li className='nav-element'>Home</li></Link>
                     <Link to="/search"><li className='nav-element'>Search</li></Link>
                     {
-                        props.isLoggedIn
-                        ? (<div className='login-elements'><Link to='/favorites'><li className='nav-element'>Favorites</li></Link>
-                        <Link to='/login'><li className='nav-element' onClick={() => props.logout()}>Logout</li></Link></div>)
-                        : (<div className='login-elements'><Link to="/login"><li className='nav-element'>Login</li></Link>
-                        <Link to="/registration"><li className='nav-element'>Register</li></Link></div>)
+                        props.username
+                        ? (<div className='login-elements'><Link to='/favorites'><li className='nav-element secondary-nav'>Favorites</li></Link>
+                        <Link to='/login'><li className='nav-element secondary-nav' onClick={() => props.logout()}>Logout</li></Link></div>)
+
+                        : (<div className='login-elements'><Link to="/login"><li className='nav-element secondary-nav'>Login</li></Link>
+                        <Link to="/registration"><li className='nav-element secondary-nav'>Register</li></Link></div>)
                     }
 
 

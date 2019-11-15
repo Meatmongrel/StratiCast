@@ -6,25 +6,25 @@ import Navbar from './Components/Navbar';
 class App extends React.Component {
 
   state = {
-    isLoggedIn: false,
     username: null
   }
   render(){
     const { isLoggedIn, username } = this.state
     const login = (user) => {
-      if(user){
-        this.setState({ isLoggedIn: true, username: user.username })
-        localStorage.setItem("loggedToken", user.jwt)
+      console.log(user)
+      if(user.jwt){
+        this.setState({ username: user.user.username })
+        localStorage.setItem(("loggedToken", user.jwt), ("username", user.user.username))
       }
       else {
-        return null
+        console.log(user.message)
       }
     }
     const logout = () => {
       this.setState({
-        isLoggedIn: false,
         username: null
       })
+      localStorage.clear()
     }
     return (
       <div className="App">
