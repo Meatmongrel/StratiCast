@@ -1,0 +1,37 @@
+.weather-card {
+    border: 5px dashed #699797;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    background-color: #6caeb1;
+    box-shadow: 0px 0px 15px black;
+}
+
+#city-title{
+    display: inline;
+    align-self: center;
+    font-size: 1.5vw;
+}
+
+#inner-card {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 3vw;
+    margin-top: 1vw;
+}
+
+#current-temp{
+    margin-top: 1rem;
+}
+
+#weather-img{
+    height: 8vh;
+    width: 4vw;
+    background: linear-gradient(to bottom right, rgb(119, 114, 118), rgb(194, 192, 193)) ;
+    border-radius: 5rem;
+}
+
+#img-container {
+    justify-content: center;
+}

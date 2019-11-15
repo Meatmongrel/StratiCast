@@ -1,0 +1,14 @@
+#login-form {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 15vw;
+    padding: 3vw;
+    margin: 10vh 0 0 39vw;
+    background: #533747;
+}
+
+button {
+    font-size: 3vh;
+}

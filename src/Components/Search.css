@@ -1,0 +1,28 @@
+#search-form {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 15vw;
+    padding: 3vw;
+    margin: 10vh 0 0 39vw;
+    background: #533747;
+}
+
+#weather-search {
+    width: 30vw;
+    margin: 4vh 0 0 34vw;
+}
+
+button {
+    border: none;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    padding: 1vh;
+    border-radius: 2rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;;
+}
